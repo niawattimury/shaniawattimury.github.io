@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Kontak</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+        <h1>Kontak
+        </h1>
+    </header>
+
+    <nav style="background-color: #e0e0e0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="beranda.html">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="biodata.html">Biodata</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="kontak.html">Kontak</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+
+    <img src="gura.jpg" width="1336px" height="500px" style="margin-top: 10px;">
+
+    <div style="display: flex; padding: 20px;">
+        <div style="flex: 3; padding-right: 20px;">
+           
+            <h2>Kontak Saya</h2>
+            <p>WA: 082199809546</p>
+            <p>E-mail: shaniawatti@gmail.com</p>
+
+            <form id="contactForm">
+                <fieldset>
+                <legend>Contact</legend>
+                <table>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="name" name="name" placeholder="name..." /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Subject</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="subject" name="subject" placeholder="subject..." /></td>
+                    </tr>
+                    <tr>
+                        <td><label>E-mail</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="email" name="email" placeholder="e-mail..." /></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="sendmessage()">Send</button></td>
+                        </td>
+                    </tr>
+                </table>
+                
+                </fieldset>
+            </form>
+
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.7285832697303!2d128.24603127397555!3d-3.6492337427724633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ced0070341fc5%3A0x6d736278f05a6f44!2sShania&#39;s%20house!5e0!3m2!1sid!2sid!4v1743056826896!5m2!1sid!2sid" width="860" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+
+        </div>
+
+        <aside style="flex: 1; background-color: #f0f0f0; padding: 10px;">
+            <h3>Alternatif Link</h3>
+            <p>Ini adalah sidebar dengan alternatif link :</p>
+            <ul>
+                <li><a href="https://unpatti.ac.id/">Website Univesitas</a></li>
+                <li><a href="https://fst.unpatti.ac.id/">Website Fakultas</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id/">Website Prodi</a></li>
+                <li><a href="https://shaniaherywattimury.com/">Portofolio</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer style="background-color: #e0e0e0; padding: 10px; text-align: center;">
+        <p>&copy; 2025 Shania Hery. All Rights Reserved.</p>
+    </footer>
+</body>
+
+<script>
+    function sendmessage(){
+    var name = document.getElementById("name").value;
+    var subject = document.getElementById("subject").value;
+    var email = document.getElementById("email").value;
+
+    alert("Pesan terkirim!\nNama: " + name + "\nSubject: " + subject + "\nEmail: " + email);
+
+    }
+</script>
+
+</html>

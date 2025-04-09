@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+        <h1>Login
+        </h1>
+    </header>
+
+    <nav style="background-color: #e0e0e0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="beranda.html">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="biodata.html">Biodata</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="kontak.html">Kontak</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+
+    <img src="gura.jpg" width="1336px" height="500px" style="margin-top: 10px;">
+
+    <div style="display: flex; padding: 20px;">
+        <div style="flex: 3; padding-right: 20px;">
+           
+            <form id="loginForm">
+                <fieldset>
+                <legend>Login</legend>
+                <table>
+                    <tr>
+                        <td><label>Username</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="username" name="username" placeholder="username..." /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td>:</td>
+                        <td><input type="password" id="password" name="password" placeholder="password..." /></td>
+                    </tr>
+                    <tr>
+                        <td><label><input type="checkbox" name="remember" value="remember" /> Remember me</label></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="validateLogin()">Login</button></td>
+                        <td><button type="button" onclick="window.location.href='register.html'">Register</button>
+                        </td>
+                    </tr>
+                </table>
+                
+                </fieldset>
+            </form>
+
+        </div>
+
+        <aside style="flex: 1; background-color: #f0f0f0; padding: 10px;">
+            <h3>Alternatif Link</h3>
+            <p>Ini adalah sidebar dengan alternatif link :</p>
+            <ul>
+                <li><a href="https://unpatti.ac.id/">Website Univesitas</a></li>
+                <li><a href="https://fst.unpatti.ac.id/">Website Fakultas</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id/">Website Prodi</a></li>
+                <li><a href="https://shaniaherywattimury.com/">Portofolio</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer style="background-color: #e0e0e0; padding: 10px; text-align: center;">
+        <p>&copy; 2025 Shania Hery. All Rights Reserved.</p>
+    </footer>
+</body>
+
+<script>
+    function validateLogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "shania" && password === "admin") {
+            window.location.href = "https://fst.unpatti.ac.id/";
+        } else {
+            alert("Username atau password salah!");
+        }
+    }
+</script>
+
+
+
+</html>

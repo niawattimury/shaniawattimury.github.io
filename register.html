@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+        <h1>Register
+        </h1>
+    </header>
+
+    <nav style="background-color: #e0e0e0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="beranda.html">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="biodata.html">Biodata</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="kontak.html">Kontak</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+
+    <img src="gura.jpg" width="1336px" height="500px" style="margin-top: 10px;">
+
+    <div style="display: flex; padding: 20px;">
+        <div style="flex: 3; padding-right: 20px;">
+           
+            <form id="registerForm">
+                <fieldset>
+                    <legend>Register</legend>
+                    <table>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="username" name="username" placeholder="full name..." /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Username</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="username" name="username" placeholder="username..." /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Date of Birth</label></td>
+                            <td>:</td>
+                            <td><input type="date" id="tanggal_lahir" name="tanggal_lahir"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender</label></td>
+                            <td>:</td>
+                            <td><input type="radio" id="laki" name="gender" value="Laki-laki">
+                                <label for="laki">Male</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                                <label for="perempuan">Female</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Agama</label></td>
+                            <td>:</td>
+                            <td><select id="agama" name="agama">
+                                <option value="">-- Pilih Agama --</option>
+                                <option value="Kristen Protestan">Kristen Protestan</option>
+                                <option value="Kristen Katolik">Kristen Katolik</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Konghucu">Konghucu</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Hindu">Hindu</option>
+                              </select></td>
+                        </tr>
+                        <tr>
+                            <td><label>E-mail</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="email" name="email" placeholder="e-mail..." /></td>
+                        </tr>
+                        <tr>
+                            <td><label>Phone Number</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="nohp" name="nohp" placeholder="phone number..." /></td>
+                        </tr>
+                        <tr>
+                            <td><label>New Password:</label></td>
+                            <td>:</td>
+                            <td><input type="password" id="newpassword" name="newpassword" placeholder="new password..." /></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" onclick="Registrasi()">Daftar</button></td>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    </fieldset>
+                
+            </form>
+
+        </div>
+
+        <aside style="flex: 1; background-color: #f0f0f0; padding: 10px;">
+            <h3>Alternatif Link</h3>
+            <p>Ini adalah sidebar dengan alternatif link :</p>
+            <ul>
+                <li><a href="https://unpatti.ac.id/">Website Univesitas</a></li>
+                <li><a href="https://fst.unpatti.ac.id/">Website Fakultas</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id/">Website Prodi</a></li>
+                <li><a href="https://shaniaherywattimury.com/">Portofolio</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer style="background-color: #e0e0e0; padding: 10px; text-align: center;">
+        <p>&copy; 2025 Shania Hery. All Rights Reserved.</p>
+    </footer>
+</body>
+
+<script>
+    function Registrasi() {
+        var name = document.getElementById("username").value;
+        var username = document.getElementsByName("username")[1].value;
+        var dob = document.getElementById("tanggal_lahir").value;
+        var gender = document.querySelector('input[name="gender"]:checked');
+        var agama = document.getElementById("agama").value;
+        var email = document.getElementById("email").value;
+        var nohp = document.getElementById("nohp").value;
+        var password = document.getElementById("newpassword").value;
+
+
+        let genderValue = gender ? gender.value : "Belum dipilih";
+
+        alert("Registrasi berhasil!\n \nNama: "+name + "\nUsername:" + username +"\nTanggal Lahir:" +dob+"\nJenis Kelamin: "+genderValue+ "\nAgama: " +agama+"\nEmail: "+email+"\nNo HP: "+nohp);
+    }
+</script>
+
+
+
+</html>
