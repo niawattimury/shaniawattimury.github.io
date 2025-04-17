@@ -52,6 +52,9 @@ aside a{
     color: #007BFF;
 
 }
+header{
+    background-color: rgb(2, 2, 96) !important;
+
 header h1{
     margin-top: 0;
 
