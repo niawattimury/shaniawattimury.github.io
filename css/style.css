@@ -2,8 +2,8 @@ body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: #f4f4f4;
-    color: blue;
+    background-color: blue;
+    color: #333;
 }
 
 nav{
