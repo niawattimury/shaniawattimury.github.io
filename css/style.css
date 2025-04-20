@@ -84,7 +84,7 @@ img{
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Rasio 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -93,7 +93,7 @@ img{
 
 .map-container {
     position: relative;
-    padding-bottom: 56.25%; /* Rasio 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -158,9 +158,9 @@ footer {
 
 .column.side {
     display: flex;
-    flex-direction: column; /* Menyusun elemen secara vertikal */
-    align-items: center; /* Menyusun gambar dan teks agar sejajar di tengah */
-    text-align: center; /* Menyusun teks agar rata tengah */
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
 }
 
 .column.middle {
@@ -190,7 +190,7 @@ footer {
 }
 
 .column.side img.ilkom {
-    margin-top: 0px;  /* Jarak atas gambar */
+    margin-top: 0px;
 }
 
 .univ{
