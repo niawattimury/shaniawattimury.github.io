@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+    <header>
         <h1>Beranda
         </h1>
     </header>
@@ -21,29 +21,33 @@
         </ul>
     </nav>
 
-    <img src="gura.jpg" >
+    <img src="gura.jpg">
 
     <div style="display: flex; padding: 20px;">
         <div style="flex: 3; padding-right: 20px;">
            
-            <p>
+            <div class="main-content">
+                <p>
                 Tentang saya
-            </p>
+                </p>
 
-            <p>
-                Hai-hai! Aku Shania, seorang Mahasiswa (Ilmu Komputer) dari Universitas Pattimura yang berasal dari rahim ibu. Aku mungkin terlihat nerd, tapi jangan remehkan kehebatanku! ✨
-                Aku suka bermain game, bernyanyi, dan menghibur semua teman-temanku. Dengan bakat dan kepintaran, aku selalu siap untuk mencoba hal baru!
-                Meskipun aku introvert, aku memiliki teman. Jadi, ayo bermain dan bercanda bersama!
-                <br>
-                <br>
-                A~
-            </p>
-            <h2>
-                <iframe style="width: 860px; height: 450px;"  src="https://www.youtube.com/embed/-cI-wcdRoP4?si=ApIOuWPNXG9H9zOD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </h2>
+                <p>
+                    Hai-hai! Aku Shania, seorang Mahasiswa (Ilmu Komputer) dari Universitas Pattimura yang berasal dari rahim ibu. Aku mungkin terlihat nerd, tapi jangan remehkan kehebatanku! ✨
+                    Aku suka bermain game, bernyanyi, dan menghibur semua teman-temanku. Dengan bakat dan kepintaran, aku selalu siap untuk mencoba hal baru!
+                    Meskipun aku introvert, aku memiliki teman. Jadi, ayo bermain dan bercanda bersama!
+                    <br>
+                    <br>
+                    A~
+                </p>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/-cI-wcdRoP4?si=ApIOuWPNXG9H9zOD" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            
         </div>
 
-        <aside style="flex: 1; padding: 10px;">
+        <aside>
             <h3>Alternatif Link</h3>
             <p>Ini adalah sidebar dengan alternatif link :</p>
             <ul>
@@ -55,7 +59,27 @@
         </aside>
     </div>
 
-    <footer">
+    <div class="row">
+        <div class="column side">
+            <h2>Universitas Pattimura</h2>
+            <img class="univ" src="univ.png" >
+        </div>
+      
+        <div class="column middle">
+          <h2>Social Media</h2>
+          <p ><a href="https://www.instagram.com/niawhtz/">Instagram</a></p>
+          <p ><a href="https://www.facebook.com/share/1ERRzXX65F/?mibextid=wwXIfr">Facebook</a></p>
+          <p ><a href="https://x.com/nier_yauw?s=11">Xtwitter</a></p>
+        </div>
+      
+        <div class="column side">
+            <h2>Ilmu Komputer</h2>
+            <img clas="ilkom" src="Ilkom.png" alt="">
+        </div>
+    </div>
+      
+
+    <footer>
         <p>&copy; 2025 Shania Hery. All Rights Reserved.</p>
     </footer>
 </body>
